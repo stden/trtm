@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
+    <Projects Include="ExtControls\Delphi 2007\GridViewD2006.dproj" />
     <Projects Include="QuickRep\QR4DesignD2007.dproj" />
     <Projects Include="QuickRep\QR4runD2007.dproj" />
     <Projects Include="trtm.dproj" />
@@ -12,7 +13,7 @@
     <Borland.Personality>Default.Personality</Borland.Personality>
     <Borland.ProjectType />
     <BorlandProject>
-  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
   </ProjectExtensions>
   <Target Name="trtm">
     <MSBuild Projects="trtm.dproj" Targets="" />
@@ -41,14 +42,23 @@
   <Target Name="QR4runD2007:Make">
     <MSBuild Projects="QuickRep\QR4runD2007.dproj" Targets="Make" />
   </Target>
+  <Target Name="GridViewD2006">
+    <MSBuild Projects="ExtControls\Delphi 2007\GridViewD2006.dproj" Targets="" />
+  </Target>
+  <Target Name="GridViewD2006:Clean">
+    <MSBuild Projects="ExtControls\Delphi 2007\GridViewD2006.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="GridViewD2006:Make">
+    <MSBuild Projects="ExtControls\Delphi 2007\GridViewD2006.dproj" Targets="Make" />
+  </Target>
   <Target Name="Build">
-    <CallTarget Targets="trtm;QR4DesignD2007;QR4runD2007" />
+    <CallTarget Targets="trtm;QR4DesignD2007;QR4runD2007;GridViewD2006" />
   </Target>
   <Target Name="Clean">
-    <CallTarget Targets="trtm:Clean;QR4DesignD2007:Clean;QR4runD2007:Clean" />
+    <CallTarget Targets="trtm:Clean;QR4DesignD2007:Clean;QR4runD2007:Clean;GridViewD2006:Clean" />
   </Target>
   <Target Name="Make">
-    <CallTarget Targets="trtm:Make;QR4DesignD2007:Make;QR4runD2007:Make" />
+    <CallTarget Targets="trtm:Make;QR4DesignD2007:Make;QR4runD2007:Make;GridViewD2006:Make" />
   </Target>
   <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
 </Project>
