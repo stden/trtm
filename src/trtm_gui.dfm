@@ -1,9 +1,9 @@
 object FormTRTM: TFormTRTM
   Left = 229
   Top = 175
-  Width = 877
-  Height = 631
   Caption = #1056#1077#1096#1077#1085#1080#1077' '#1090#1077#1093#1085#1080#1095#1077#1089#1082#1080#1093' '#1087#1088#1086#1090#1080#1074#1086#1088#1077#1095#1080#1081
+  ClientHeight = 577
+  ClientWidth = 869
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,26 +21,24 @@ object FormTRTM: TFormTRTM
     Left = 0
     Top = 0
     Width = 869
-    Height = 582
+    Height = 577
     ActivePage = TabSheetTask
     Align = alClient
-    TabIndex = 0
     TabOrder = 0
     object TabSheetTask: TTabSheet
       Caption = '&'#1056#1077#1096#1077#1085#1080#1077' '#1079#1072#1076#1072#1095#1080
       object Splitter1: TSplitter
         Left = 390
         Top = 0
-        Width = 3
-        Height = 554
-        Cursor = crHSplit
+        Height = 549
         Beveled = True
+        ExplicitHeight = 554
       end
       object PanelPageControlMethods: TPanel
         Left = 393
         Top = 0
         Width = 468
-        Height = 554
+        Height = 549
         Align = alClient
         Locked = True
         TabOrder = 1
@@ -48,10 +46,9 @@ object FormTRTM: TFormTRTM
           Left = 1
           Top = 1
           Width = 466
-          Height = 552
+          Height = 547
           ActivePage = TabSheetObjectsList
           Align = alClient
-          TabIndex = 0
           TabOrder = 0
           object TabSheetObjectsList: TTabSheet
             Caption = #1057#1074#1086#1081#1089#1090#1074#1072' '#1086#1073#1098#1077#1082#1090#1072
@@ -59,7 +56,7 @@ object FormTRTM: TFormTRTM
               Left = 0
               Top = 0
               Width = 458
-              Height = 524
+              Height = 519
               Align = alClient
               DragKind = dkDock
               TabOrder = 0
@@ -67,7 +64,7 @@ object FormTRTM: TFormTRTM
                 Left = 1
                 Top = 1
                 Width = 456
-                Height = 522
+                Height = 517
                 Style = lbOwnerDrawVariable
                 Align = alClient
                 DragMode = dmAutomatic
@@ -121,6 +118,10 @@ object FormTRTM: TFormTRTM
           object TabSheetAdvicedMethods: TTabSheet
             Caption = #1055#1088#1077#1076#1083#1072#1075#1072#1077#1084#1099#1077' '#1084#1077#1090#1086#1076#1099
             ImageIndex = 1
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 0
+            ExplicitHeight = 0
             object PanelMethodsList: TPanel
               Left = 0
               Top = 0
@@ -151,7 +152,7 @@ object FormTRTM: TFormTRTM
               end
               object ChartMethodsCharacteristics: TChart
                 Left = 1
-                Top = 259
+                Top = 254
                 Width = 456
                 Height = 261
                 BackWall.Brush.Color = clWhite
@@ -161,19 +162,16 @@ object FormTRTM: TFormTRTM
                 Align = alBottom
                 TabOrder = 1
                 DragKind = dkDock
+                ExplicitTop = 259
                 object Series1: TBarSeries
-                  Marks.ArrowLength = 20
+                  Marks.Callout.Brush.Color = clBlack
                   Marks.Visible = True
-                  SeriesColor = clRed
                   ShowInLegend = False
                   Title = #1063#1072#1089#1090#1086#1090#1072' '#1087#1088#1077#1076#1083#1072#1075#1072#1077#1084#1099#1093' '#1084#1077#1090#1086#1076#1086#1074
-                  XValues.DateTime = False
+                  Gradient.Direction = gdTopBottom
                   XValues.Name = 'X'
-                  XValues.Multiplier = 1
                   XValues.Order = loAscending
-                  YValues.DateTime = False
                   YValues.Name = 'Bar'
-                  YValues.Multiplier = 1
                   YValues.Order = loNone
                 end
               end
@@ -182,6 +180,10 @@ object FormTRTM: TFormTRTM
           object TabSheetAllMethods: TTabSheet
             Caption = #1042#1089#1077' '#1084#1077#1090#1086#1076#1099
             ImageIndex = 2
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 0
+            ExplicitHeight = 0
             object PanelAllMethodsList: TPanel
               Left = 0
               Top = 0
@@ -211,7 +213,7 @@ object FormTRTM: TFormTRTM
         Left = 0
         Top = 0
         Width = 390
-        Height = 554
+        Height = 549
         Align = alLeft
         TabOrder = 0
         object Splitter2: TSplitter
@@ -459,12 +461,12 @@ object FormTRTM: TFormTRTM
           Left = 1
           Top = 365
           Width = 388
-          Height = 188
+          Height = 183
           Align = alClient
           TabOrder = 2
           DesignSize = (
             388
-            188)
+            183)
           object Label6: TLabel
             Left = 5
             Top = 8
@@ -482,7 +484,7 @@ object FormTRTM: TFormTRTM
             Left = 5
             Top = 24
             Width = 380
-            Height = 157
+            Height = 137
             Anchors = [akLeft, akTop, akRight, akBottom]
             ScrollBars = ssBoth
             TabOrder = 0
@@ -493,6 +495,10 @@ object FormTRTM: TFormTRTM
     object TabSheetReport: TTabSheet
       Caption = '&'#1054#1090#1095#1077#1090
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object PanelAuthor: TPanel
         Left = 0
         Top = 0
@@ -567,23 +573,36 @@ object FormTRTM: TFormTRTM
           Page.Orientation = poPortrait
           Page.PaperSize = A4
           Page.Values = (
-            100
-            2970
-            100
-            2100
-            100
-            100
-            0)
+            100.000000000000000000
+            2970.000000000000000000
+            100.000000000000000000
+            2100.000000000000000000
+            100.000000000000000000
+            100.000000000000000000
+            0.000000000000000000)
           PrinterSettings.Copies = 1
+          PrinterSettings.OutputBin = Auto
           PrinterSettings.Duplex = False
           PrinterSettings.FirstPage = 0
           PrinterSettings.LastPage = 0
-          PrinterSettings.OutputBin = Auto
+          PrinterSettings.UseStandardprinter = False
+          PrinterSettings.UseCustomBinCode = False
+          PrinterSettings.CustomBinCode = 0
+          PrinterSettings.ExtendedDuplex = 0
+          PrinterSettings.UseCustomPaperCode = False
+          PrinterSettings.CustomPaperCode = 0
+          PrinterSettings.PrintMetaFile = False
+          PrinterSettings.PrintQuality = 0
+          PrinterSettings.Collate = 0
+          PrinterSettings.ColorOption = 0
           PrintIfEmpty = False
           ShowProgress = False
           SnapToGrid = True
           Units = MM
           Zoom = 100
+          PrevFormStyle = fsNormal
+          PreviewInitialState = wsNormal
+          PrevInitialZoom = qrZoomToFit
           object QRLabelCopyright: TQRLabel
             Left = 602
             Top = 16
@@ -595,10 +614,10 @@ object FormTRTM: TFormTRTM
             Frame.DrawLeft = False
             Frame.DrawRight = False
             Size.Values = (
-              44.9791666666667
-              1592.79166666667
-              42.3333333333333
-              410.104166666667)
+              44.979166666666700000
+              1592.791666666670000000
+              42.333333333333300000
+              410.104166666667000000)
             Alignment = taLeftJustify
             AlignToBand = False
             AutoSize = True
@@ -627,11 +646,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              177.270833333333
-              1899.70833333333)
+              177.270833333333300000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             BandType = rbTitle
             object QRLabelProjectName: TQRLabel
               Left = 286
@@ -644,10 +666,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                66.1458333333333
-                756.708333333333
-                2.64583333333333
-                386.291666666667)
+                66.145833333333340000
+                756.708333333333400000
+                2.645833333333333000
+                386.291666666666700000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -675,10 +697,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                66.1458333333333
-                296.333333333333
-                105.833333333333
-                381)
+                66.145833333333300000
+                296.333333333333000000
+                105.833333333333000000
+                381.000000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -700,10 +722,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                0
-                105.833333333333
-                230.1875)
+                44.979166666666700000
+                0.000000000000000000
+                105.833333333333000000
+                230.187500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -733,11 +755,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              298.979166666667
-              1899.70833333333)
+              298.979166666666700000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             BandType = rbDetail
             object QRMemoTask: TQRMemo
               Left = 8
@@ -750,10 +775,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                129.645833333333
-                21.1666666666667
-                63.5
-                1865.3125)
+                129.645833333333000000
+                21.166666666666700000
+                63.500000000000000000
+                1865.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -776,10 +801,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                0
-                0
-                129.645833333333)
+                44.979166666666700000
+                0.000000000000000000
+                0.000000000000000000
+                129.645833333333000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -808,10 +833,10 @@ object FormTRTM: TFormTRTM
             Frame.DrawLeft = False
             Frame.DrawRight = False
             Size.Values = (
-              44.9791666666667
-              105.833333333333
-              42.3333333333333
-              132.291666666667)
+              44.979166666666700000
+              105.833333333333000000
+              42.333333333333300000
+              132.291666666667000000)
             Alignment = taLeftJustify
             AlignToBand = False
             AutoSize = True
@@ -840,11 +865,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              187.854166666667
-              1899.70833333333)
+              187.854166666666700000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = QRBandTask
             object QRMemoAC: TQRMemo
               Left = 152
@@ -857,10 +885,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                87.3125
-                402.166666666667
-                84.6666666666667
-                1484.3125)
+                87.312500000000000000
+                402.166666666667000000
+                84.666666666666700000
+                1484.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -884,10 +912,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                21.1666666666667
-                84.6666666666667
-                301.625)
+                44.979166666666700000
+                21.166666666666700000
+                84.666666666666700000
+                301.625000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -909,10 +937,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                0
-                0
-                254)
+                44.979166666666700000
+                0.000000000000000000
+                0.000000000000000000
+                254.000000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -942,11 +970,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              105.833333333333
-              1899.70833333333)
+              105.833333333333300000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandAC
             object QRLabelContrTech: TQRLabel
               Left = 8
@@ -959,10 +990,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                21.1666666666667
-                0
-                203.729166666667)
+                44.979166666666700000
+                21.166666666666700000
+                0.000000000000000000
+                203.729166666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -984,10 +1015,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                87.3125
-                402.166666666667
-                0
-                1484.3125)
+                87.312500000000000000
+                402.166666666667000000
+                0.000000000000000000
+                1484.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1013,11 +1044,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              105.833333333333
-              1899.70833333333)
+              105.833333333333300000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandTC
             object QRMemoPC: TQRMemo
               Left = 152
@@ -1030,10 +1064,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                87.3125
-                402.166666666667
-                0
-                1484.3125)
+                87.312500000000000000
+                402.166666666667000000
+                0.000000000000000000
+                1484.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1057,10 +1091,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                21.1666666666667
-                0
-                193.145833333333)
+                44.979166666666700000
+                21.166666666666700000
+                0.000000000000000000
+                193.145833333333000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1084,11 +1118,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              105.833333333333
-              1899.70833333333)
+              105.833333333333300000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandPHC
             object QRLabelToChange: TQRLabel
               Left = 0
@@ -1101,10 +1138,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                0
-                42.3333333333333
-                322.791666666667)
+                44.979166666666700000
+                0.000000000000000000
+                42.333333333333300000
+                322.791666666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1126,10 +1163,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                381
-                42.3333333333333
-                508)
+                44.979166666666700000
+                381.000000000000000000
+                42.333333333333300000
+                508.000000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1151,10 +1188,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                931.333333333333
-                42.3333333333333
-                293.6875)
+                44.979166666666700000
+                931.333333333333000000
+                42.333333333333300000
+                293.687500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1176,10 +1213,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                1248.83333333333
-                42.3333333333333
-                214.3125)
+                44.979166666666700000
+                1248.833333333330000000
+                42.333333333333300000
+                214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1201,10 +1238,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                1481.66666666667
-                42.3333333333333
-                211.666666666667)
+                44.979166666666700000
+                1481.666666666670000000
+                42.333333333333300000
+                211.666666666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1226,10 +1263,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                1714.5
-                42.3333333333333
-                132.291666666667)
+                44.979166666666700000
+                1714.500000000000000000
+                42.333333333333300000
+                132.291666666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1251,10 +1288,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                1312.33333333333
-                0
-                261.9375)
+                44.979166666666700000
+                1312.333333333330000000
+                0.000000000000000000
+                261.937500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1278,11 +1315,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              296.333333333333
-              1899.70833333333)
+              296.333333333333400000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandMethodsHeader
             object QRMemoObjData: TQRMemo
               Left = 0
@@ -1295,10 +1335,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                0
-                21.1666666666667
-                341.3125)
+                256.645833333333000000
+                0.000000000000000000
+                21.166666666666700000
+                341.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1319,10 +1359,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                381
-                21.1666666666667
-                510.645833333333)
+                256.645833333333000000
+                381.000000000000000000
+                21.166666666666700000
+                510.645833333333000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1343,10 +1383,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                931.333333333333
-                21.1666666666667
-                298.979166666667)
+                256.645833333333000000
+                931.333333333333000000
+                21.166666666666700000
+                298.979166666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1367,10 +1407,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                1248.83333333333
-                21.1666666666667
-                214.3125)
+                256.645833333333000000
+                1248.833333333330000000
+                21.166666666666700000
+                214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1391,10 +1431,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                1481.66666666667
-                21.1666666666667
-                214.3125)
+                256.645833333333000000
+                1481.666666666670000000
+                21.166666666666700000
+                214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1415,10 +1455,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                256.645833333333
-                1714.5
-                21.1666666666667
-                171.979166666667)
+                256.645833333333000000
+                1714.500000000000000000
+                21.166666666666700000
+                171.979166666667000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1441,40 +1481,15 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              296.333333333333
-              1899.70833333333)
+              296.333333333333400000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = QRBandMethods
-            object QRChartMethods: TQRChart
-              Left = 4
-              Top = 20
-              Width = 711
-              Height = 77
-              Frame.Color = clBlack
-              Frame.DrawTop = False
-              Frame.DrawBottom = False
-              Frame.DrawLeft = False
-              Frame.DrawRight = False
-              Size.Values = (
-                203.729166666667
-                10.5833333333333
-                52.9166666666667
-                1881.1875)
-              object QRDBChart1: TQRDBChart
-                Left = -1
-                Top = -1
-                Width = 1
-                Height = 1
-                BackWall.Brush.Color = clWhite
-                BackWall.Brush.Style = bsClear
-                Title.Text.Strings = (
-                  '')
-                Title.Visible = False
-                Chart3DPercent = 10
-              end
-            end
             object QRLabelChartTitle: TQRLabel
               Left = 240
               Top = 8
@@ -1486,10 +1501,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                635
-                21.1666666666667
-                629.708333333333)
+                44.979166666666670000
+                635.000000000000000000
+                21.166666666666670000
+                629.708333333333400000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1513,11 +1528,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              486.833333333333
-              1899.70833333333)
+              486.833333333333400000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandImage
             object QRMemoSolution: TQRMemo
               Left = 8
@@ -1530,10 +1548,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                275.166666666667
-                21.1666666666667
-                66.1458333333333
-                1865.3125)
+                275.166666666667000000
+                21.166666666666700000
+                66.145833333333300000
+                1865.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1556,10 +1574,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.9791666666667
-                21.1666666666667
-                2.64583333333333
-                158.75)
+                44.979166666666700000
+                21.166666666666700000
+                2.645833333333330000
+                158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1589,11 +1607,14 @@ object FormTRTM: TFormTRTM
             Frame.DrawRight = False
             AlignToBottom = False
             Color = clWhite
+            TransparentBand = False
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              381
-              1899.70833333333)
+              381.000000000000000000
+              1899.708333333333000000)
+            PreCaluculateBandHeight = False
+            KeepOnOnePage = False
             ParentBand = ChildBandResult
             object QRMemoMethdsPop: TQRMemo
               Left = 8
@@ -1606,10 +1627,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                338.666666666667
-                21.1666666666667
-                23.8125
-                1844.14583333333)
+                338.666666666667000000
+                21.166666666666700000
+                23.812500000000000000
+                1844.145833333330000000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = False
@@ -1626,6 +1647,10 @@ object FormTRTM: TFormTRTM
     object TabSheetProperties: TTabSheet
       Caption = '&'#1053#1072#1089#1090#1088#1086#1081#1082#1080
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object CheckBoxPrintImage: TCheckBox
         Left = 8
         Top = 16
