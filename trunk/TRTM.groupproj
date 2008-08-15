@@ -1,0 +1,54 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{67e0eac1-990b-499a-97c2-d0cb0dc0b81f}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="QuickRep\QR4DesignD2007.dproj" />
+    <Projects Include="QuickRep\QR4runD2007.dproj" />
+    <Projects Include="trtm.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="trtm">
+    <MSBuild Projects="trtm.dproj" Targets="" />
+  </Target>
+  <Target Name="trtm:Clean">
+    <MSBuild Projects="trtm.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="trtm:Make">
+    <MSBuild Projects="trtm.dproj" Targets="Make" />
+  </Target>
+  <Target Name="QR4DesignD2007">
+    <MSBuild Projects="QuickRep\QR4DesignD2007.dproj" Targets="" />
+  </Target>
+  <Target Name="QR4DesignD2007:Clean">
+    <MSBuild Projects="QuickRep\QR4DesignD2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="QR4DesignD2007:Make">
+    <MSBuild Projects="QuickRep\QR4DesignD2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="QR4runD2007">
+    <MSBuild Projects="QuickRep\QR4runD2007.dproj" Targets="" />
+  </Target>
+  <Target Name="QR4runD2007:Clean">
+    <MSBuild Projects="QuickRep\QR4runD2007.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="QR4runD2007:Make">
+    <MSBuild Projects="QuickRep\QR4runD2007.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="trtm;QR4DesignD2007;QR4runD2007" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="trtm:Clean;QR4DesignD2007:Clean;QR4runD2007:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="trtm:Make;QR4DesignD2007:Make;QR4runD2007:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>
