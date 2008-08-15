@@ -113,8 +113,6 @@ type
     ChildBandResult: TQRChildBand;
     QRMemoSolution: TQRMemo;
     QRLabel4: TQRLabel;
-    QRChartMethods: TQRChart;
-    QRDBChart1: TQRDBChart;
     QRLabelChartTitle: TQRLabel;
     QRMemoObjData: TQRMemo;
     QRMemoBobjsData: TQRMemo;
@@ -301,7 +299,6 @@ var
   cnt : word;
 begin
   ChartMethodsCharacteristics.SeriesList.Clear;
-  QRChartMethods.Chart.SeriesList.Clear;
   GridViewMethods.Enabled := False;
 //  TRTMProblem.Destroy;
   if ProblemsArray <> nil then
@@ -404,7 +401,6 @@ begin
   begin
     RichEditMethods.Text := GetGlobalPopularMethodsStr;
     DrawGraphic( ChartMethodsCharacteristics, obj, wGlobalMethodsPopularity );
-    DrawGraphic( TChart(QRChartMethods.Chart), obj, wGlobalMethodsPopularity );
     PageControlMethods.ActivePage := TabSheetAdvicedMethods;
   end;
 end;
@@ -600,13 +596,7 @@ begin
   begin
     ChildBandImage.Visible          := True;
     ChildBandImage.Height           := 120;
-
-    QRChartMethods.Width            := ChildBandImage.ClientWidth;
-    QRChartMethods.Top              := QRLabelChartTitle.Top + QRLabelChartTitle.Height + 3;
-    QRChartMethods.Height           := ChildBandImage.ClientHeight - QRLabelChartTitle.Height - 5;
-  end else
-  begin
-    QRChartMethods.Height           := 1;
+  end else begin
     ChildBandImage.Height           := 1;
   end;
   if EditAuthor.Text <> '' then
