@@ -29,7 +29,23 @@ uses
   qrabsdatas in 'QuickRep\qrabsdatas.pas',
   qrbonus in 'QuickRep\qrbonus.pas',
   qrcomped in 'QuickRep\qrcomped.pas',
-  qr4const in 'QuickRep\qr4const.pas';
+  qr4const in 'QuickRep\qr4const.pas',
+  qrprntr in 'QuickRep\qrprntr.pas',
+  qrprev in 'QuickRep\qrprev.pas' {QRStandardPreview},
+  qrextra in 'QuickRep\qrextra.pas',
+  qrprgres in 'QuickRep\qrprgres.pas' {QRProgressForm},
+  qrexpr in 'QuickRep\qrexpr.pas',
+  qrexpbld in 'QuickRep\qrexpbld.pas' {QRExpressionBuilder},
+  qrctrls in 'QuickRep\qrctrls.pas',
+  qrlabled in 'QuickRep\qrlabled.pas' {QRLabelEditorForm},
+  qrexpred in 'QuickRep\qrexpred.pas' {QRExprEditorForm},
+  qrprnsu in 'QuickRep\qrprnsu.pas',
+  QRSearchDlg in 'QuickRep\QRSearchDlg.pas' {SearchDlg},
+  qrpdffilt in 'QuickRep\qrpdffilt.pas',
+  qrexport in 'QuickRep\qrexport.pas',
+  qrwebfilt in 'QuickRep\qrwebfilt.pas',
+  qrenved in 'QuickRep\qrenved.pas' {QREnvironmentEditor},
+  QrTee in 'QuickRep\QrTee.pas';
 
 {$R *.RES}
 
@@ -40,5 +56,6 @@ begin
   Application.CreateForm(TFormTRTMMaster, FormTRTMMaster);
   Application.CreateForm(TFormTRTMMasterObjects, FormTRTMMasterObjects);
   Application.CreateForm(TFormTRTMMasterMethods, FormTRTMMasterMethods);
+  Application.CreateForm(TSearchDlg, SearchDlg);
   Application.Run;
 end.

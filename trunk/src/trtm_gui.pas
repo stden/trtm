@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   Menus, ActnList, ExtCtrls, QuickRpt, Grids, StdCtrls, ComCtrls, TeEngine,
   Series, TeeProcs, Chart, trtm_main, trtm_types, trtm_lng, trtm_table, Ex_Grid,
-  Qrctrls, Inifiles, DBChart, QrTee;
+  Qrctrls, Inifiles, DBChart, QrTee, XPMan;
 
 type
   TMethodsRawContent = array [ 0 .. 6 ] of string;
@@ -139,6 +139,7 @@ type
     MainMenuViewMaster: TMenuItem;
     TimerShowMaster: TTimer;
     QRMemoMethdsPop : TQRMemo;
+    XPManifest1: TXPManifest;
     procedure ActionExitExecute(Sender: TObject);
     procedure MainMenuFileExitClick(Sender: TObject);
     procedure MainMenuHelpAboutClick(Sender: TObject);
