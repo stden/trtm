@@ -6,7 +6,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Документы\RAD Studio\5.0\Bpl\QR4DesignD2007.bpl</DCC_DependencyCheckOutputName>
+    <DCC_DependencyCheckOutputName>..\..\..\..\All Users\Документы\RAD Studio\5.0\Bpl\QR4DesignD2007.bpl</DCC_DependencyCheckOutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Version>7.0</Version>
@@ -38,18 +38,18 @@
     <DelphiCompile Include="QR4DesignD2007.dpk">
       <MainSource>MainSource</MainSource>
     </DelphiCompile>
-    <DCCReference Include="bdertl.dcp" />
-    <DCCReference Include="designide.dcp" />
-    <DCCReference Include="QR4RunD2007.dcp" />
+    <DCCReference Include="..\bdertl.dcp" />
+    <DCCReference Include="..\designide.dcp" />
+    <DCCReference Include="..\QR4RunD2007.dcp" />
+    <DCCReference Include="..\rtl.dcp" />
+    <DCCReference Include="..\vcl.dcp" />
+    <DCCReference Include="..\Vcldb.dcp" />
+    <DCCReference Include="..\vcljpg.dcp" />
+    <DCCReference Include="..\vclx.dcp" />
     <DCCReference Include="QREPORT.DCR" />
     <DCCReference Include="QREPORT.DCR" />
     <DCCReference Include="qreport.pas" />
     <DCCReference Include="qridewz.pas" />
     <DCCReference Include="qrnew.pas" />
-    <DCCReference Include="rtl.dcp" />
-    <DCCReference Include="vcl.dcp" />
-    <DCCReference Include="Vcldb.dcp" />
-    <DCCReference Include="vcljpg.dcp" />
-    <DCCReference Include="vclx.dcp" />
   </ItemGroup>
 </Project>

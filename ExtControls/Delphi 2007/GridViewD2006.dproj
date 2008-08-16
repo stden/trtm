@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-    <DCC_DependencyCheckOutputName>C:\Documents and Settings\All Users\Документы\RAD Studio\5.0\Bpl\GridViewD2006.bpl</DCC_DependencyCheckOutputName>
+    <DCC_DependencyCheckOutputName>..\..\..\..\..\All Users\Документы\RAD Studio\5.0\Bpl\GridViewD2006.bpl</DCC_DependencyCheckOutputName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Version>7.0</Version>
@@ -28,6 +28,14 @@
     <DelphiCompile Include="GridViewD2006.dpk">
       <MainSource>MainSource</MainSource>
     </DelphiCompile>
+    <DCCReference Include="..\..\bdertl.dcp" />
+    <DCCReference Include="..\..\dbrtl.dcp" />
+    <DCCReference Include="..\..\designide.dcp" />
+    <DCCReference Include="..\..\rtl.dcp" />
+    <DCCReference Include="..\..\vcl.dcp" />
+    <DCCReference Include="..\..\vclactnband.dcp" />
+    <DCCReference Include="..\..\vcldb.dcp" />
+    <DCCReference Include="..\..\vclx.dcp" />
     <DCCReference Include="..\ExtGraphics.pas" />
     <DCCReference Include="..\ExtStrUtils.pas" />
     <DCCReference Include="..\ExtSystem.pas" />
@@ -44,13 +52,5 @@
     <DCCReference Include="..\Ex_RegGrid.dcr" />
     <DCCReference Include="..\Ex_RegGrid.dcr" />
     <DCCReference Include="..\Ex_RegGrid.pas" />
-    <DCCReference Include="bdertl.dcp" />
-    <DCCReference Include="dbrtl.dcp" />
-    <DCCReference Include="designide.dcp" />
-    <DCCReference Include="rtl.dcp" />
-    <DCCReference Include="vcl.dcp" />
-    <DCCReference Include="vclactnband.dcp" />
-    <DCCReference Include="vcldb.dcp" />
-    <DCCReference Include="vclx.dcp" />
   </ItemGroup>
 </Project>

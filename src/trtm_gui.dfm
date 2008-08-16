@@ -118,30 +118,27 @@ object FormTRTM: TFormTRTM
           object TabSheetAdvicedMethods: TTabSheet
             Caption = #1055#1088#1077#1076#1083#1072#1075#1072#1077#1084#1099#1077' '#1084#1077#1090#1086#1076#1099
             ImageIndex = 1
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
             object PanelMethodsList: TPanel
               Left = 0
               Top = 0
               Width = 458
-              Height = 524
+              Height = 519
               Align = alClient
               TabOrder = 0
               object Splitter4: TSplitter
                 Left = 1
-                Top = 520
+                Top = 515
                 Width = 456
                 Height = 3
                 Cursor = crVSplit
                 Align = alBottom
+                ExplicitTop = 520
               end
               object RichEditMethods: TRichEdit
                 Left = 1
                 Top = 1
                 Width = 456
-                Height = 258
+                Height = 253
                 Align = alClient
                 DragKind = dkDock
                 ReadOnly = True
@@ -162,7 +159,6 @@ object FormTRTM: TFormTRTM
                 Align = alBottom
                 TabOrder = 1
                 DragKind = dkDock
-                ExplicitTop = 259
                 object Series1: TBarSeries
                   Marks.Callout.Brush.Color = clBlack
                   Marks.Visible = True
@@ -180,15 +176,11 @@ object FormTRTM: TFormTRTM
           object TabSheetAllMethods: TTabSheet
             Caption = #1042#1089#1077' '#1084#1077#1090#1086#1076#1099
             ImageIndex = 2
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 0
-            ExplicitHeight = 0
             object PanelAllMethodsList: TPanel
               Left = 0
               Top = 0
               Width = 458
-              Height = 524
+              Height = 519
               Align = alClient
               DragKind = dkDock
               TabOrder = 0
@@ -196,7 +188,7 @@ object FormTRTM: TFormTRTM
                 Left = 1
                 Top = 1
                 Width = 456
-                Height = 522
+                Height = 517
                 Align = alClient
                 DragKind = dkDock
                 ReadOnly = True
@@ -495,10 +487,6 @@ object FormTRTM: TFormTRTM
     object TabSheetReport: TTabSheet
       Caption = '&'#1054#1090#1095#1077#1090
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object PanelAuthor: TPanel
         Left = 0
         Top = 0
@@ -539,7 +527,7 @@ object FormTRTM: TFormTRTM
         Left = 0
         Top = 49
         Width = 861
-        Height = 505
+        Height = 500
         Align = alClient
         TabOrder = 1
         object QuickRep: TQuickRep
@@ -614,10 +602,10 @@ object FormTRTM: TFormTRTM
             Frame.DrawLeft = False
             Frame.DrawRight = False
             Size.Values = (
-              44.979166666666700000
-              1592.791666666670000000
-              42.333333333333300000
-              410.104166666667000000)
+              44.979166666666670000
+              1592.791666666667000000
+              42.333333333333330000
+              410.104166666666700000)
             Alignment = taLeftJustify
             AlignToBand = False
             AutoSize = True
@@ -666,8 +654,8 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                66.145833333333340000
-                756.708333333333400000
+                66.145833333333330000
+                756.708333333333300000
                 2.645833333333333000
                 386.291666666666700000)
               Alignment = taCenter
@@ -722,9 +710,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 0.000000000000000000
-                105.833333333333000000
+                105.833333333333300000
                 230.187500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -801,10 +789,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
-                129.645833333333000000)
+                129.645833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -833,10 +821,10 @@ object FormTRTM: TFormTRTM
             Frame.DrawLeft = False
             Frame.DrawRight = False
             Size.Values = (
-              44.979166666666700000
-              105.833333333333000000
-              42.333333333333300000
-              132.291666666667000000)
+              44.979166666666670000
+              105.833333333333300000
+              42.333333333333330000
+              132.291666666666700000)
             Alignment = taLeftJustify
             AlignToBand = False
             AutoSize = True
@@ -912,9 +900,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                21.166666666666700000
-                84.666666666666700000
+                44.979166666666670000
+                21.166666666666670000
+                84.666666666666670000
                 301.625000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -937,7 +925,7 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 0.000000000000000000
                 0.000000000000000000
                 254.000000000000000000)
@@ -990,10 +978,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                21.166666666666700000
+                44.979166666666670000
+                21.166666666666670000
                 0.000000000000000000
-                203.729166666667000000)
+                203.729166666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1091,10 +1079,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                21.166666666666700000
+                44.979166666666670000
+                21.166666666666670000
                 0.000000000000000000
-                193.145833333333000000)
+                193.145833333333300000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1138,10 +1126,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 0.000000000000000000
-                42.333333333333300000
-                322.791666666667000000)
+                42.333333333333330000
+                322.791666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1163,9 +1151,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 381.000000000000000000
-                42.333333333333300000
+                42.333333333333330000
                 508.000000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -1188,9 +1176,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                931.333333333333000000
-                42.333333333333300000
+                44.979166666666670000
+                931.333333333333300000
+                42.333333333333330000
                 293.687500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -1213,9 +1201,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                1248.833333333330000000
-                42.333333333333300000
+                44.979166666666670000
+                1248.833333333333000000
+                42.333333333333330000
                 214.312500000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -1238,10 +1226,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                1481.666666666670000000
-                42.333333333333300000
-                211.666666666667000000)
+                44.979166666666670000
+                1481.666666666667000000
+                42.333333333333330000
+                211.666666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1263,10 +1251,10 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
+                44.979166666666670000
                 1714.500000000000000000
-                42.333333333333300000
-                132.291666666667000000)
+                42.333333333333330000
+                132.291666666666700000)
               Alignment = taLeftJustify
               AlignToBand = False
               AutoSize = True
@@ -1288,8 +1276,8 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                1312.333333333330000000
+                44.979166666666670000
+                1312.333333333333000000
                 0.000000000000000000
                 261.937500000000000000)
               Alignment = taLeftJustify
@@ -1319,7 +1307,7 @@ object FormTRTM: TFormTRTM
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              296.333333333333400000
+              296.333333333333300000
               1899.708333333333000000)
             PreCaluculateBandHeight = False
             KeepOnOnePage = False
@@ -1485,7 +1473,7 @@ object FormTRTM: TFormTRTM
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              296.333333333333400000
+              296.333333333333300000
               1899.708333333333000000)
             PreCaluculateBandHeight = False
             KeepOnOnePage = False
@@ -1504,7 +1492,7 @@ object FormTRTM: TFormTRTM
                 44.979166666666670000
                 635.000000000000000000
                 21.166666666666670000
-                629.708333333333400000)
+                629.708333333333300000)
               Alignment = taCenter
               AlignToBand = True
               AutoSize = True
@@ -1532,7 +1520,7 @@ object FormTRTM: TFormTRTM
             ForceNewColumn = False
             ForceNewPage = False
             Size.Values = (
-              486.833333333333400000
+              486.833333333333300000
               1899.708333333333000000)
             PreCaluculateBandHeight = False
             KeepOnOnePage = False
@@ -1574,9 +1562,9 @@ object FormTRTM: TFormTRTM
               Frame.DrawLeft = False
               Frame.DrawRight = False
               Size.Values = (
-                44.979166666666700000
-                21.166666666666700000
-                2.645833333333330000
+                44.979166666666670000
+                21.166666666666670000
+                2.645833333333333000
                 158.750000000000000000)
               Alignment = taLeftJustify
               AlignToBand = False
@@ -1647,10 +1635,6 @@ object FormTRTM: TFormTRTM
     object TabSheetProperties: TTabSheet
       Caption = '&'#1053#1072#1089#1090#1088#1086#1081#1082#1080
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object CheckBoxPrintImage: TCheckBox
         Left = 8
         Top = 16
@@ -1803,5 +1787,9 @@ object FormTRTM: TFormTRTM
     OnTimer = TimerShowMasterTimer
     Left = 453
     Top = 113
+  end
+  object XPManifest1: TXPManifest
+    Left = 592
+    Top = 112
   end
 end

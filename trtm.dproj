@@ -73,6 +73,36 @@
     <DCCReference Include="QuickRep\qrabsdatas.pas" />
     <DCCReference Include="QuickRep\qrbonus.pas" />
     <DCCReference Include="QuickRep\qrcomped.pas" />
+    <DCCReference Include="QuickRep\qrctrls.pas" />
+    <DCCReference Include="QuickRep\qrenved.pas">
+      <Form>QREnvironmentEditor</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrexpbld.pas">
+      <Form>QRExpressionBuilder</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrexport.pas" />
+    <DCCReference Include="QuickRep\qrexpr.pas" />
+    <DCCReference Include="QuickRep\qrexpred.pas">
+      <Form>QRExprEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrextra.pas" />
+    <DCCReference Include="QuickRep\qrlabled.pas">
+      <Form>QRLabelEditorForm</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrpdffilt.pas" />
+    <DCCReference Include="QuickRep\qrprev.pas">
+      <Form>QRStandardPreview</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrprgres.pas">
+      <Form>QRProgressForm</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\qrprnsu.pas" />
+    <DCCReference Include="QuickRep\qrprntr.pas" />
+    <DCCReference Include="QuickRep\QRSearchDlg.pas">
+      <Form>SearchDlg</Form>
+    </DCCReference>
+    <DCCReference Include="QuickRep\QrTee.pas" />
+    <DCCReference Include="QuickRep\qrwebfilt.pas" />
     <DCCReference Include="QuickRep\quickrpt.pas" />
     <DCCReference Include="src\trtm_gui.pas">
       <Form>FormTRTM</Form>
