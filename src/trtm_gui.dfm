@@ -312,6 +312,7 @@ object FormTRTM: TFormTRTM
             Width = 379
             Height = 55
             Anchors = [akLeft, akTop, akRight]
+            ScrollBars = ssVertical
             TabOrder = 0
           end
         end

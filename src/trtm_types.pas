@@ -6,8 +6,6 @@
 // History
 unit trtm_types;
 
-
-
 interface
 
 const
@@ -22,19 +20,10 @@ type TTRTM_Method_Text     = record
                              end;
 
 type
-    TTRTM_Methods_Text      = array [ 1 .. MAX_METHODS ] of TTRTM_Method_Text;
-
-
-
-
-type
-    TTRTM_Methods_Cell      = array [ 1 .. MAX_METHODS_PER_CELL ] of word;
-
-type
-    TPTRTM_Methods_Cell     = ^TTRTM_Methods_Cell;
-
-type
-    TTRTM_Objects_Raw       = array [ 1 .. MAX_ID ] of TTRTM_Methods_Cell;
+  TTRTM_Methods_Text  = array [ 1 .. MAX_METHODS ] of TTRTM_Method_Text;
+  TTRTM_Methods_Cell  = array [ 1 .. MAX_METHODS_PER_CELL ] of word;
+  TPTRTM_Methods_Cell = ^TTRTM_Methods_Cell;
+  TTRTM_Objects_Raw   = array [ 1 .. MAX_ID ] of TTRTM_Methods_Cell;
 
 type
     TTRTM_Object            = record

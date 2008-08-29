@@ -29,13 +29,14 @@ const
   TXT_GETTING_WORSE        = 'ухудшающийся параметр';
   TXT_INPUT                = 'Введите';
   TXT_TABLE_NAME           = 'Таблица выбора приёмов устранения технических противоречий по Альтшуллеру';
+
   MSG_ENTER_GETTING_WORSE  = TXT_INPUT + ' ' + TXT_GETTING_WORSE;
   MSG_ENTER_CHANGING       = TXT_INPUT + ' ' + TXT_CHANGING;
   MSG_ABOUT                = 'Теория: Братцева Г.Г.' +
                               #13#10 + 'Реализация: Соболев С.П., sobolevsp@mail.ru' +
                               #13#10 + '             '  + 'Филипова О.С.' +
-                              #13#10 + 'Доработано: Григорьев В.В., armag_vvg@hotmail.ru'
-                              ;
+                              #13#10 + 'Доработано: Григорьев В.В., armag_vvg@hotmail.ru' +
+                              #13#10 + 'Доработано: Степулёнок Д.О., super.denis@gmail.com';
   MSG_ABOUT_HTM            = '<strong>ТРТМ:</strong> Теория: Братцева Г.Г.' +
                               '<br>' + 'Реализация: <a href="mailto:sobolevsp@mail.ru">Соболев С.П.</a>,' +
                               '<br>' + 'Филипова О.С.'
@@ -76,7 +77,7 @@ const
 
   CHART_TITLE              = 'Популярность предложенных методов';
   MAIN_FORM_TITLE          = 'Решение технических противоречий';
-  
+
 implementation
 
 end.
